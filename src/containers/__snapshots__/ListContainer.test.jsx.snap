@@ -1,3 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListContainer tests should match the snapshot 1`] = `ReactWrapper {}`;
+exports[`ListContainer Tests should render without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="ListContainer__Container-ma19ql-0 bniXjg"
+  >
+    <h1
+      class="ListContainer__Header-ma19ql-1 fXGXOp"
+    >
+      GREAP
+    </h1>
+  </div>
+</DocumentFragment>
+`;

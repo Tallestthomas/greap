@@ -1,14 +1,12 @@
 import React from 'react';
-import ListContainer from './ListContainer';
-import { mount, shallow } from 'enzyme';
+import { render, cleanup } from 'react-testing-library';
+import ListContainer from './ListContainer.jsx';
 
-describe('ListContainer tests', () => {
-  it('should render without crashing', () => {
-    const listContainer = shallow(<ListContainer />);
-    expect(listContainer).not.toBeUndefined();
+afterEach(cleanup);
+
+describe('ListContainer Tests', () => {
+  test('should render without crashing', () => {
+    const { asFragment } = render(<ListContainer />);
+    expect(asFragment()).toMatchSnapshot();
   });
-  it('should match the snapshot', () => {
-    const listContainer = mount(<ListContainer />); 
-    expect(listContainer).toMatchSnapshot();
-  })
 });

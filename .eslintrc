@@ -1,6 +1,7 @@
 {
   "extends": [
-    "plugin:eslint-react",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
     "airbnb-base"
   ]
 }
